@@ -40,11 +40,12 @@
     "desc-experience-3": "the button below to see the corresponding project used by each language / tools.",
     "btn-experience-desc-1": "Press",
     "btn-experience-desc-2": "for detailed view",
+    "btn-experience-desc-3": "for simplified view",
 
     "title-project": "Projects",
     "desc-project": "You can see a portfolio of projects I have supervised and worked on in the section below.",
     "button-project": "Click for more →",
-    "desc-project-1": "A large-scale 3D-based simulation system that is played in multiplayer mode to test defense and attack battle scenarios in land, sea, air & even space.",
+    "desc-project-1": "A large-scale 3D-based simulation system that is played in multiplayer mode to test defense and attack battle scenarios in land, sea & air.",
     "desc-project-2": "A 3D-based Ship and fishing platform simulators used as learning tools to help sailor learning about the fishing ship bridge and the stages of fishing.",
     "desc-project-3": "A large-scale 2D web-based simulation system that is played in multiplayer mode to test defense and attack battle scenarios in land, sea, air & even space.",
     "desc-project-4": "A Web-based application for product (data) management and delivery, as well as scenario mapping using a geospatial platform.",

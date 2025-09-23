@@ -40,11 +40,12 @@
     "desc-experience-3": "Tombol di bawah ini untuk melihat proyek terkait yang menggunakan programming language / tools dipilih.",
     "btn-experience-desc-1": "Klik",
     "btn-experience-desc-2": "untuk lebih detail",
+    "btn-experience-desc-3": "untuk lebih singkat",
 
     "title-project": "Proyek",
     "desc-project": "Anda dapat melihat portofolio proyek yang telah saya supervisi dan kerjakan pada bagian di bawah ini.",
     "button-project": "Lihat lebih lanjut →",
-    "desc-project-1": "Sistem simulasi berbasis 3D berskala besar yang dimainkan dalam mode multipemain untuk menguji skenario pertempuran pertahanan dan serangan di darat, laut, udara, bahkan di luar angkasa.",
+    "desc-project-1": "Sistem simulasi berbasis 3D berskala besar yang dimainkan dalam mode multipemain untuk menguji skenario pertempuran pertahanan dan serangan di darat, laut & udara",
     "desc-project-2": "Simulator kapal dan platform penangkapan ikan berbasis 3D yang digunakan sebagai alat pembelajaran untuk membantu pelaut memahami jembatan kapal penangkap ikan serta tahapan-tahapan dalam kegiatan penangkapan ikan.",
     "desc-project-3": "Sistem simulasi berbasis web 2D berskala besar yang dimainkan dalam mode multipemain untuk menguji skenario pertempuran pertahanan dan serangan di darat, laut, udara, bahkan di luar angkasa.",
     "desc-project-4": "Aplikasi berbasis web untuk manajemen dan pengiriman produk (data), serta pemetaan skenario menggunakan platform geospasial.",

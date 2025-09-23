@@ -8,13 +8,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Oleo+Script|Source+Sans+Pro" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/global_style.css">
 
-    
-    <title>Document</title>
+    <title>Aryaputra BIP</title>
 </head>
 <body>
     <nav class="navbar navbar-expand navbar-auto-adjustment mt-sm-2 mb-2">
@@ -126,7 +123,7 @@
                             </div>
                             <div class="timeline-step">
                                 <h5>Freelance Web Developer <span class="badge badge-career">2020</span></h5>
-                                <div class="date mb-2">Fast-Fitness Management System</div>
+                                <div class="date mb-2">GYM Management System</div>
                                 <p class="fst-italic" style="color: #8f9ba8;" data-i18n="desc-creer-4">Creating and developed a web-based gym management application, as well as creating a company profile website as an introduction to the gym.</p>
                             </div>
                             <div class="timeline-step">
@@ -151,7 +148,7 @@
                                 <h5>Multimedia <span class="badge badge-career">2015 - 2018</span></h5>
                                 <div class="date mb-2">SMK Bogor Center School (BOASH)</div>
                                 <p class="fst-italic" style="color: #8f9ba8;" data-i18n="desc-education-2">Graduated as the best multimedia student in 2018 and received an additional scholarship.</p>
-                                <p class="fst-italic" style="color: #8f9ba8;" data-i18n="desc-education-2-gpa">(Graduated with a vocational grade of 96 / 100)</p>
+                                <p class="fst-italic" style="color: #8f9ba8;" data-i18n="desc-education-2-gpa">(Graduated with a vocational grade of 92 / 100)</p>
                             </div>
                         </div>
                     </div>
@@ -169,12 +166,14 @@
             <div class="luxy-el bg-section4 sun-bg" data-speed-y="-20"></div>
             <!-- <div class="luxy-el bg-section3 fog-bg" data-speed-y="20"></div> -->
 
-            <div class="bg-section2 mountain-bg" data-speed-y="25">
-                <section id="experience" class="container-fluid mb-3 pt-5" style="max-width: 795px;">
+            <div id="experience-container" class="bg-section2 mountain-bg" data-speed-y="25" style="height: auto;">
+                <section id="experience" class="container-fluid pb-5 pt-5" style="max-width: 795px;">
                     <h1 class="c-dcthTY cct2" data-i18n="title-experience">Experience & Skills</h1>
                     <p class="text-break mb-0" style="color: #ffffff;"><span data-i18n="desc-experience-1">You can</span> <span style="color: #3d52a6;" data-i18n="desc-experience-2">click</span> <span data-i18n="desc-experience-3">the button below to see the corresponding project used by each language / tools.</span></p>
-                    <button class="btn btn-press-start mt-0 mb-3" id="btn-simplify-skill"><span data-i18n="btn-experience-desc-1">Press</span> <kbd>ctrl</kbd> <kbd>E</kbd> <span data-i18n="btn-experience-desc-2">for detailed view</span> →</button>
                     
+                    <button class="btn btn-press-start mt-0 mb-3 btn-simplify-skill" id="btn-simplify-skill-detailed"><span data-i18n="btn-experience-desc-1">Press</span> <kbd>ctrl</kbd> <kbd>F</kbd> <span data-i18n="btn-experience-desc-2">for detailed view</span> →</button>
+                    <button class="btn btn-press-start mt-0 mb-3 btn-simplify-skill" id="btn-simplify-skill-simplify" style="display: none;"><span data-i18n="btn-experience-desc-1">Press</span> <kbd>ctrl</kbd> <kbd>F</kbd> <span data-i18n="btn-experience-desc-3">for simplified view</span> →</button>
+
                     <div class="row ps-2 pe-2">
                         <div class="col p-1">
                             <button type="button" class="filter-tag-cloud btn btn-sm text-nowrap btn-outline-secondary btn-toggle-state active w-100" data-entries="fullstack">
@@ -210,7 +209,7 @@
 
                     <div class="row align-items-center">
                         <div id="skill-container"></div>
-                        <div id="skill-container-alternative" class="row m-1 ms-4 mt-5" style="display: none;"></div>
+                        <div id="skill-container-alternative" class="row m-1 mt-3 justify-content-center " style="display: none; "></div>
                     </div>
                 </section>
             </div>
@@ -326,7 +325,7 @@
                                     <img src="src/img/projects/wgs_2d/img01.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Project WGS 2D 1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="src/img/projects/wgs_2d/img02.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Project WGS 2D 2">
+                                    <img src="src/img/projects/wgs_2d/img02.png" class="d-block w-100 img-fluid rounded shadow" alt="Project WGS 2D 2">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="src/img/projects/wgs_2d/img03.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Project WGS 2D 3">
@@ -552,13 +551,16 @@
                             
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="src/img/projects/gym/img01.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Project GYM 1">
+                                    <img src="src/img/projects/gym/img01.png" class="d-block w-100 img-fluid rounded shadow" alt="Project GYM 1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="src/img/projects/gym/img02.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Project GYM 2">
+                                    <img src="src/img/projects/gym/img02.png" class="d-block w-100 img-fluid rounded shadow" alt="Project GYM 2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="src/img/projects/gym/img03.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Project GYM 3">
+                                    <img src="src/img/projects/gym/img03.png" class="d-block w-100 img-fluid rounded shadow" alt="Project GYM 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="src/img/projects/gym/img04.png" class="d-block w-100 img-fluid rounded shadow" alt="Project GYM 4">
                                 </div>
                             </div>
 
@@ -666,7 +668,7 @@
 							<h5>Linked-In</h5>
 						</div>
                         
-						<a href="https://www.linkedin.com/in/aryaputrabip" class="text-white" style="font-size: 14px;">linkedin.com/in/aryaputrabip</a>
+						<a href="https://www.linkedin.com/in/aryaputrabip" target="_blank" class="text-white" style="font-size: 14px;">linkedin.com/in/aryaputrabip</a>
 					 </div>
 				</div>	 
 				
@@ -678,7 +680,7 @@
 							<h5>Github</h5>
 						</div>
                         
-						<a href="https://www.github.com/aryaputrabip" class="text-white" style="font-size: 14px;">github.com/aryaputrabip</a>
+						<a href="https://www.github.com/aryaputrabip" target="_blank" class="text-white" style="font-size: 14px;">github.com/aryaputrabip</a>
 					 </div>
 				</div>	 
 				
@@ -690,7 +692,7 @@
 							<h5>Email</h5>
 						</div>
                         
-						<a href="#" class="text-white" style="font-size: 14px;">aryaputrabip@gmail.com</a>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=aryaputrabip@gmail.com&su=hello&body=i%20wanted%20to%20reach%20you" target="_blank" class="text-white" style="font-size: 14px;">aryaputrabip@gmail.com</a>
 					 </div>
 				</div>	 
 				
@@ -835,6 +837,8 @@
             let currentContainerWidth   = $("#skill-container svg").attr("width");
             let currentContainerHeight  = $("#skill-container svg").attr("height");
 
+            let bbb   = $("#experience").attr("height");
+
             let newContainerWidth    = currentContainerWidth;
             let newContainerHeight   = currentContainerHeight;
 
@@ -877,6 +881,8 @@
 
                 skillTagClouds.destroy();
                 skillTagClouds = new SVG3DTagCloud(document.getElementById('skill-container'), svgTagCloudSettings );
+
+                //$("#experience-container").height(bbb - 1000);
             }
 
             skillTagClouds.setEntries(entriesSkill);
@@ -892,7 +898,7 @@
             $("#skill-container-alternative").empty();
             for(let i=0; i < entriesSkill.length; i++){
                 $("#skill-container-alternative").append(`
-                <button class="btn dark-glass col-3 col-sm-2 col-md-2 m-2">
+                <button class="btn dark-glass col-3 col-sm-2 col-md-2 m-1">
                     <img src="`+entriesSkill[i].image+`" alt="Skill Logo `+i+`" class="img-fluid justify-content-center align-items-center">
                 </button>`);
             }
@@ -942,13 +948,19 @@
             renderAlternativeSkillPanel();
         });
 
-        $("#btn-simplify-skill").click(function(){
+        $(".btn-simplify-skill").click(function(){
             if($("#skill-container").is(':hidden')){
                 $('#skill-container-alternative').hide();
                 $('#skill-container').show();
+
+                $('#btn-simplify-skill-detailed').show();
+                $('#btn-simplify-skill-simplify').hide();
             }else{
                 $('#skill-container').hide();
                 $('#skill-container-alternative').show();
+                
+                $('#btn-simplify-skill-simplify').show();
+                $('#btn-simplify-skill-detailed').hide();
             }
         });
 

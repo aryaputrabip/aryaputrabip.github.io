@@ -339,6 +339,7 @@ body{
 }
 
 .btn-press-start:hover{
+    color: #ffffff;
     background-color: #212024;   
 }
 
