@@ -2,7 +2,6 @@
 $color-background: #08070b;
 $color-primary:#f2f2f2;
 $color-secondary: #8f9ba8;
-$color-hover: #212024;
 $color-yellow:#ffff80;
 $color-purple: #9580ff;
 $color-red: #ff9580;
@@ -15,6 +14,68 @@ $font-body: Biotif, sans-serif;
 $font-code: Fira Code, monospace;
 $font-heading: Neuzeit Grotesk Bold, sans-serif;
 */
+
+:root{
+    --color-hover: #212024;
+    --color-green: #8aff80;
+    --color-white: #ffffff;
+    --color-purple: #9580ff;
+    --color-cyan: #80ffea;
+
+    --font-body: Biotif, sans-serif;
+    --font-code: 'FiraCode', monospace;
+    --font-heading: 'Neuzeit Grotesk', sans-serif;
+
+    --glass-bg: rgba(15, 15, 15, 0.4);
+    --glass-border: rgba(151, 151, 151, 0.1);
+    --glass-hover: rgba(180, 180, 180, 0.4);
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('../fonts/Biotif-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('../fonts/Biotif-RegularItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('../fonts/Biotif-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraCode';
+    src: url('../fonts/FiraCode-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neuzeit Grotesk';
+    src: url('../fonts/NeuzeitGrotesk-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+    background: linear-gradient(to bottom,#2c3e50, #fbc8ab, #d16ba5, #fbc8ab, #fbc8ab, #0a086f, #2c3e50);
+    font-family: var(--font-body);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
 
 .badge-csharp{
     background-color: #925594;
@@ -109,17 +170,22 @@ $font-heading: Neuzeit Grotesk Bold, sans-serif;
     width: 18px;
 }
 
-body{
-    background: linear-gradient(to bottom,#2c3e50, #fbc8ab, #d16ba5, #fbc8ab, #fbc8ab, #0a086f, #2c3e50);
-    /* background: linear-gradient(rgb(17, 17, 50), rgb(12, 12, 29)); */
-    /* background-color: #08070b; */
-    font-family: Biotif, sans-serif;
-    /* background-image: url(../img/mountains.png); */
-    background-size: cover;
-    background-position: bottom;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+.badge-title{
+    background-color: var(--color-hover);
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.badge-career{
+    background-color: var(--color-hover);
+    font-size: 10px;
+    padding: 6px 0 5px;
+    font-weight: normal;
+}
+
+.flag-style{
+    width: 25px;
+    height: 20px;
 }
 
 .mountain-bg{
@@ -142,111 +208,72 @@ body{
     background-image: url('../img/fog02.png');
 }
 
-.c-dcthTY-ieGCrJR-css {
-    background-image: linear-gradient(135deg, #9580ff 0%, #80ffea 100%);
+.title-colorful {
+    background-image: linear-gradient(135deg, var(--color-purple) 0%, var(--color-cyan) 100%);
 }
-.cct2 {
+.title-colorful-2 {
     background-image: linear-gradient(135deg, #443979 0%, #7560de 100%);
 }
-.c-dcthTY {
+.title-colorful-style {
     background-size: 100%;
     background-clip: text;
     box-decoration-break: clone;
-    font-family: Neuzeit Grotesk, sans-serif;
+    -webkit-box-decoration-break: clone;
+    font-family: var(--font-heading);
     font-size: 48px;
     line-height: 50px;
     margin: 0 0 20px;
     -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
+}
+
+.bg-section, .bg-section2, .bg-section3, .bg-section4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .bg-section{
 	position: absolute;
     left: 0;
     top: 0;
-	width: 100%;
-	height: 100vh;
+    width: 100%;
+    height: 100vh;
     z-index: -5;
-    background-repeat: no-repeat;
-    background-position: bottom center; 
-    -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-position: bottom center;
 }
 
 .bg-section2{
 	width: 100%;
-	height: 100vh;
+    height: 100vh;
     z-index: -1;
-    background-repeat: no-repeat;
-    background-position: center bottom; 
-    -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-position: center bottom;
 }
 
 .bg-section3{
 	position: absolute;
     top: 50vh;
     left: 0;
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
     z-index: -5;
-    background-repeat: no-repeat;
-    background-position: bottom center; 
-    -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-position: bottom center;
 }
 
 .bg-section4{
 	position: absolute;
     top: 390vh;
     left: 15%;
-	width: 1000px;
-	height: 1000px;
+    width: 1000px;
+    height: 1000px;
     z-index: -5;
-    background-repeat: no-repeat;
-    background-position: bottom center; 
-    -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-position: bottom center;
 }
 
-.btn-toggle-state{
-    background: rgba(15, 15, 15, 0);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgb(83, 83, 83);
-    border-radius: 56px;
-    color: #ffffff;
-    padding-top: 6px;
-}
-
-.btn-toggle-state i{
-    font-size: 4px;
-    vertical-align: middle;
-    color: #ff0000;
-}
-
-.btn-toggle-state.active{
-    background: rgba(15, 15, 15, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid #9797971a;
-    border-radius: 56px;
-    color: #ffffff;
-}
-
-.btn-toggle-state.active i{
-    font-size: 4px;
-    vertical-align: middle;
-    color: #8aff80;
-}
-
-.btn-toggle-state:hover{
-    background: rgba(180, 180, 180, 0.4);
-    color: #ffffff;
+.banner-style{
+    max-width: 595px;
+    height: 100vh
 }
     
 .navbar-top{
@@ -256,9 +283,8 @@ body{
     position: relative;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background: rgba(15, 15, 15, 0.4);
-    
-    border: 1px solid #9797971a;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
     border-radius: 56px;
     flex-direction: row;
     justify-content: flex-start;
@@ -291,185 +317,145 @@ body{
 }
 
 .nav-item.active{
-    /* z-index: -1; */
-    background: rgba(180, 180, 180, 0.4);
+    background: var(--glass-hover);
     border-radius: 56px;
     transition: opacity 2s;
-    /* width: 112px;
-    height: 44px; */
 }
+
+.nav-link {
+  color: var(--color-white);
+}
+
 .nav-link.active{
-    color: #ffffff !important;
+    color: var(--color-white) !important;
     font-weight: bold;
 }
 
-.nav-link:hover{
-    color: #ffffff !important;
+.nav-link:hover, .nav-link:visited {
+  color: var(--color-white) !important;
 }
 
-.nav-link:visited{
-    color: #ffffff !important;
-}
-
-.nav-item a{
-    color: #ffffff;
-}
-
-
-
-.badge-title{
-    background-color: #212024;
-    font-size: 14px;
+.btn-toggle-state{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 56px;
+    color: var(--color-white);
     padding-top: 6px;
-    padding-bottom: 5px;
 }
 
-.badge-career{
-    background-color: #212024;
-    font-size: 10px;
-    padding-top: 6px;
-    padding-bottom: 5px;
-    font-weight: normal;
+.btn-toggle-state i{
+    font-size: 4px;
+    vertical-align: middle;
+    color: #ff0000;
+}
+
+.btn-toggle-state.active{
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+}
+
+.btn-toggle-state.active i {
+  color: var(--color-green);
+}
+
+.btn-toggle-state:hover{
+    background: var(--glass-hover);
+    color: var(--color-white);
 }
 
 .btn-press-start{
-    color: #ffffff;
+    color: var(--color-white);
     font-weight: bold;
     margin-left: -12px;
+    display: inline-block;
+    padding: 0.375rem;
 }
 
 .btn-press-start:hover{
-    color: #ffffff;
-    background-color: #212024;   
+    color: var(--color-white);
+    background-color: var(--color-hover);
 }
 
 .btn-press-start:hover kbd{
-    background-color: #ffffff;
-    color: #212024;
+    background-color: var(--color-white);
+    color: var(--color-hover);
 }
 
-    .timeline {
-        position: relative;
-        margin-left: 20px;
-        padding-left: 20px;
-        border-left: 1px solid #3a4b5c;
-    }
+.dark-glass{
+    background-color: rgba(207, 207, 207, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(4, 4, 4, 0.1);
 
-    .timeline-step {
-      position: relative;
-      margin-bottom: 2rem;
-    }
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
-    .timeline-step::before {
-      content: "";
-      position: absolute;
-      left: -26px;
-      top: 5px;
-      width: .75rem;
-      height: .75rem;
-      border-radius: 50%;
-      background-color: rgb(48, 48, 66);
-    }
+.btn.dark-glass:hover{
+    background-color: rgba(59, 59, 59, 0.5);
+}
 
-    .timeline-step.completed::before {
-      
-      background-color: rgb(98, 84, 168); 
-    }
+.dark-glass-only{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(59, 59, 59, 0.5);
+    border: 1px solid var(--glass-border);
 
-    .timeline-step .date {
-      font-size: 0.85rem;
-      color: #6c757d;
-    }
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
 
-    .dark-glass{
-        background-color: rgba(207, 207, 207, 0.5);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+.box-part{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: var(--glass-bg);
 
-        border: 1px solid #0404041a;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-
-        box-shadow: 0 10px 10px -5px #0000001a;
-        transition: all 0.3s ease;
-    }
-
-    .btn.dark-glass:hover{
-        background-color: rgba(59, 59, 59, 0.5);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-
-        border: 1px solid #0404041a;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-
-        box-shadow: 0 10px 10px -5px #0000001a;
-        transition: all 0.3s ease;
-    }
-
-    .dark-glass-only{
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        background-color: rgba(59, 59, 59, 0.5);
+    box-shadow: 0 10px 10px -5px #0000001a;
         
-        border: 1px solid #9797971a;
-
-        box-shadow: 0 10px 10px -5px #0000001a;
-    }
-
-    .box-part{
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        background: rgba(15, 15, 15, 0.4);
-
-        box-shadow: 0 10px 10px -5px #0000001a;
-        
-        border-radius: 6px;
-        padding:20px 10px;
-        margin:10px 0px;
-    }
-
-    .carousel-inner img{
-        max-height: 400px;
-    }
-
-@font-face {
-    font-family: 'Biotif';
-    src: url('../fonts/Biotif-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Biotif';
-    src: url('../fonts/Biotif-RegularItalic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
+    border-radius: 6px;
+    padding:20px 10px;
+    margin:10px 0px;
 }
 
 
-@font-face {
-    font-family: 'Biotif';
-    src: url('../fonts/Biotif-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #3a4b5c;
 }
 
-@font-face {
-    font-family: 'FiraCode';
-    src: url('../fonts/FiraCode-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+.timeline-step {
+    position: relative;
+    margin-bottom: 2rem;
 }
 
-@font-face {
-    font-family: 'Neuzeit Grotesk';
-    src: url('../fonts/NeuzeitGrotesk-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
+.timeline-step::before {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 5px;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: rgb(48, 48, 66);
 }
+
+.timeline-step.completed::before {
+    background-color: rgb(98, 84, 168); 
+}
+
+.timeline-step .date {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.carousel-inner img{
+    max-height: 400px;
+}
+
+
 
 @media (max-width: 1400px) { /* Bootstrap's xxl breakpoint */
 
