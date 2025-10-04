@@ -52,10 +52,17 @@
     "desc-project-3": "A large-scale 2D web-based simulation system that is played in multiplayer mode to test defense and attack battle scenarios in land, sea, air & even space.",
     "desc-project-4": "A Web-based application for product (data) management and delivery, as well as scenario mapping using a geospatial platform.",
     "desc-project-5": "The monitoring dashboard uses the Knowage platform to monitor products (data) on the application.",
-    "desc-project-6": "A web-based application for managing product inventory, arranging deliveries and as a communication tool between divisions.",
+    "desc-project-6": "A web-based application for managing product inventory, arranging deliveries & communication tool between divisions.",
     "desc-project-7": "Website for ordering and promoting printed products. You can visit it in",
     "desc-project-8": "Web-based application for managing finances, products and gym membership.",
     "desc-project-9": "Online store website for purchasing products.",
+    "desc-project-10": "A simple quiz game made using Unity Engine with customizable JSON data",
+    "desc-project-11": "A community driven website for desktop and mobile application (android) to help other people translating their project into other language, collecting score and increasing level for a special gift and badge, utilizing technology usch as Java, JSP, JSF and Google Cloud Platform.",
+    "desc-project-12": "Website for local ferry information and ticket booking.",
+    "desc-project-13": "Website for local delivery and shipping information.",
+
+    "title-personal-project": "Personal Project",
+    "desc-personal-project": "My personal project that I had worked on before.",
 
     "title-contact": "Contact Me",
     "desc-contact": "Want to work together? feel free to contact me using below links.",
